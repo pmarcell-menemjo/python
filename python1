@@ -1,4 +1,6 @@
 print("Hello world")
+#import sys #könyvtár szükséges a sys.float_info.dig parancshoz
+
 x=5
 print(type(x))
 s="123"
@@ -24,3 +26,5 @@ print(type(a5)) #str
 print(a5)
 
 #print(a1+a5) #hiba
+
+#print(sys.float_info.dig) #jelenleg nem jó
