@@ -65,3 +65,4 @@ print("\nrange(3,14,2):\t", end="")
 # 3 5 7 9 11 13
 for x in range(3,14,2):
     print("%4d" % x, end="")
+print("\n")
