@@ -1,0 +1,26 @@
+print("Hello world")
+x=5
+print(type(x))
+s="123"
+print(type(s))
+#print(x+s) #hiba
+print(type(s) is str)
+print(type(s) is int)
+
+a1 = 120
+print(type(a1)) #int
+
+a2 = 12.0
+print(type(a2)) #float
+
+a3 = 5 + 1j
+print(type(a3)) #complex
+
+a4 = float(7)
+print(type(a4)) #float
+
+a5 = str(1)
+print(type(a5)) #str
+print(a5)
+
+#print(a1+a5) #hiba
