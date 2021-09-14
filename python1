@@ -50,3 +50,13 @@ print("Ez kerüljön", end=" ")
 print("egy sorba.")
 print("Ez kerüljön", end="\n")
 print("külön sorba.")
+
+print("range(6):   \t", end="")
+# 0 1 2 3 4 5
+for x in range(6):
+    print("%4d" % x, end="")
+    
+print("\nrange(3, 9):   \t", end="")
+# 3 4 5 6 7 8
+for x in range(3, 9):
+    print("%4d" % x, end="")
