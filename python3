@@ -1,0 +1,16 @@
+a=int(input("Add meg az első számot: "))
+b=int(input("Add meg a második számot: "))
+
+while a<0:
+    print("A szám nem lehet negatív!")
+    a=int(input("Add meg az első számot: "))
+
+while b<=0:
+    print("A szám legyen nagyobb mint nulla!")
+    b=int(input("Add meg a második számot: "))
+    
+maradek=a
+while maradek>=b:
+    maradek=maradek-b
+    
+print("A maradék: %d" %maradek)
