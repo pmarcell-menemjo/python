@@ -59,3 +59,24 @@ elif c=='4':
 elif c!='1' or c!='2' or c!='3' or c!='4':
     print("SUTA")
     exit()
+
+--------------------------------------------
+
+CASE-ES VERZIÓ:
+
+a=int(input("Add meg az első számot: "))
+b=int(input("Add meg a második számot: "))
+
+opcio=input("Add meg a műveletet (1: összeadás, 2: kivonás, 3: szorzás, 4: osztás): ")
+
+match opcio:
+    case "1":
+        print(a+b)
+    case "2":
+        print(a-b)
+    case "3":
+        print(a*b)
+    case "4":
+        print(a/b)
+    case _:
+        print("SUTA LÉPJÉL KI")
