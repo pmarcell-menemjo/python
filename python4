@@ -35,3 +35,27 @@ for i in range(1,n):
         else:
             print(" ", end="")
     print("")
+
+--------------------------------------------------------------------
+
+számológép:
+
+a=int(input("Add meg az első számot: "))
+b=int(input("Add meg a második számot: "))
+c=input("Add meg a műveletet (1: összeadás, 2: kivonás, 3: szorzás, 4: osztás): ")
+
+if c=='1':
+    print(a+b)
+    
+elif c=='2':
+    print(a-b)
+    
+elif c=='3':
+    print(a*b)
+    
+elif c=='4':
+    print(a/b)
+    
+elif c!='1' or c!='2' or c!='3' or c!='4':
+    print("SUTA")
+    exit()
