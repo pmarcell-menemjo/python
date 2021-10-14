@@ -1,0 +1,14 @@
+import random
+num = random.randint(1, 10)
+print(num)
+guess = int(input("Mondj egy számot: "))
+
+while guess != num:
+    if guess > num:
+        print("Túl nagy( ͡° ͜ʖ ͡°) ")
+        guess = int(input("Próbáld újra: "))
+    else:
+        print("Túl kicsi ( ͡ʘ ͜ʖ ͡ʘ)")
+        guess = int(input("Próbáld újra: "))
+
+print("Szép volt uram")
