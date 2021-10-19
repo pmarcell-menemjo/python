@@ -1,0 +1,71 @@
+eredmeny=0
+n=0
+szam=int(input("Adj meg egy egész számot "))
+
+while szam!=0:
+    eredmeny=eredmeny+szam
+    n+=1
+    szam=int(input("Adj meg egy egész számot "))
+print("Számok összege %d" %eredmeny)
+print("Számok átlaga %f" %(eredmeny/n))
+
+-----------------------------------------------------------------------------------------
+TÖMBÖK
+-----------------------------------------------------------------------------------------
+
+autok=["vw", "bmw", "suzuki", "lada"]
+print(autok[1])
+print(autok[3])
+print(autok)
+for i in autok:
+    print(i)
+autok.append("mercedes")
+print(autok[4])
+print(autok)
+autok.remove("vw")
+print(autok)
+autok.pop(3)
+print(autok)
+autok.insert(0, "VW")
+print(autok)
+autok.reverse()
+print(autok)
+autok.sort()
+print(autok)
+
+----------------------------------------------------------------------------------------
+
+szamok=[int(input("Adj meg egy számot "))]
+i=0
+eredmeny=0
+while szamok[i]!=0:
+    eredmeny+=szamok[i]
+    i+=1
+    szamok.append(int(input("Adj meg egy számot: ")))
+print("Számok összege %d" %eredmeny)
+print("Számok átlaga %.2f" %(eredmeny/(len(szamok)-1)))
+
+---------------------------------------------------------------------------------------
+
+szam=int(input("Adj meg egy számot: "))
+while szam==0:
+    szam=int(input("Adj meg egy számot: "))
+szamok=[szam]
+while szam!=0:
+    szam=int(input("Adj meg egy számot: "))
+    szamok.append(szam)
+szamok.pop()
+#print(szamok)
+
+minimum=szamok[0]
+for i in range(1,len(szamok)):
+    if minimum>szamok[i]:
+        minimum=szamok[i]
+print("A legkissebb szám a: %d" %minimum)
+
+maximum=szamok[0]
+for i in range(1,len(szamok)):
+    if maximum<szamok[i]:
+        maximum=szamok[i]
+print("A legnagyobb szám a: %d" %maximum)
+
