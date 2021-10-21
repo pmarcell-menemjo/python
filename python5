@@ -69,3 +69,20 @@ for i in range(1,len(szamok)):
         maximum=szamok[i]
 print("A legnagyobb szám a: %d" %maximum)
 
+-------------------------------------------------------------------------------
+
+import random
+
+tomb=[random.randint(1,10)]
+for i in range(1,100):
+    tomb.append(random.randint(1,10))
+print(tomb)
+
+szamok=[0,0,0,0,0,0,0,0,0,0]
+
+for i in tomb:
+    for j in range(0,10):
+        if i==(j+1):
+            szamok[j]+=1
+for k in  range(0,10):
+    print("A(z) %d szám %d alkalommal szerepel a tömbben! " %((k+1), szamok[k]))
